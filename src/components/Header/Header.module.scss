@@ -12,10 +12,15 @@
 
     .logo{
         flex-basis: 13%;
+
+        span{
+            color: var(--green);
+        }
     }
 
-    .git{
-        background: #fff;
+    .icons{
+        color: var(--green);
+        font-size: 1.2em;
     }
 
     .mainHeaderNav{

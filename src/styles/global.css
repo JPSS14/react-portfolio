@@ -12,3 +12,7 @@ ul{
 a{
     text-decoration: none;
 }
+
+:root{
+    --green: #00B81C;
+}
