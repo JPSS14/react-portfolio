@@ -9,7 +9,7 @@
         max-width: 1366px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .mainProfile{
@@ -33,7 +33,7 @@
 
             .imgContainer{
                 flex-basis: 40%;
-                border-right: dashed 2px var(--green);
+                border-right: dashed 3px var(--green);
                 padding-right: 10px;
 
                 img{
@@ -60,6 +60,19 @@
                     margin-bottom: 2px;
                 }
             } 
+        }
+    }
+
+    .cta{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 47%;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            color: var(--green);
+            font-size: 2rem;
         }
     }
 }

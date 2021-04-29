@@ -20,14 +20,20 @@ export default function Home() {
               </div>
               <div className={style.presentation}>
                 <p>João Pedro Scarabelli Silva</p>
-                <p>Desenvolvedor Web</p> 
-                <p>PHP</p> 
-                <p>JavaScript</p> 
+                <p>Desenvolvedor Web</p>
+                <p>PHP</p>
+                <p>JavaScript</p>
                 <p>TypeScript</p>
-                <p>React</p> 
+                <p>React</p>
                 <p>Next JS</p>
               </div>
             </div>
+          </div>
+
+          <div className={style.cta}>
+            <p className={style.ctaText}>
+              Estudar, aprender, construir e rodar, é o ciclo de todo programador, acompanhe o meu aqui!
+            </p>
           </div>
 
         </div>

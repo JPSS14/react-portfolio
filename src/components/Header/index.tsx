@@ -10,13 +10,15 @@ export function Header() {
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/" target="_bank">
-                            <AiFillLinkedin className={style.icons}/>
+                            <AiFillLinkedin className={style.icons} />
                         </a>
                     </li>
 
-                    <li><a href="https://github.com/JPSS14" target="_bank">
-                        <AiOutlineGithub className={style.icons}/>
-                    </a></li>
+                    <li>
+                        <a href="https://github.com/JPSS14" target="_bank">
+                            <AiOutlineGithub className={style.icons} />
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
