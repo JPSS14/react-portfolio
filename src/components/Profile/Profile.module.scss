@@ -3,7 +3,6 @@
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 75vh;
     background: url("/code2.png") no-repeat center top fixed;
 
 
@@ -14,6 +13,7 @@
         justify-content: flex-start;
         align-items: center;
         color: #fff;
+        margin: 120px 0;
         margin-left: 20px;
         
         
@@ -56,6 +56,71 @@
                     margin-bottom: 2px;
                 }
             } 
+        }
+    }
+    @media(max-width: 1025px){
+        .mainProfileCard{
+            margin: 70px;
+
+            .mainProfileContent{
+                justify-content: center;
+                flex-basis: 40%;
+    
+                .imgContainer{
+                    flex-basis: 90%;
+                    border-bottom: dashed 3px var(--green);
+                    border-right: none;
+                    padding-bottom: 10px;
+                }
+                .presentation{
+                    flex-basis: 95%;
+                    margin-top: 5px;
+                }
+            }
+        }
+    } 
+    @media(max-width: 878px){
+        .mainProfileCard{
+            margin: 50px;
+
+            .mainProfileContent{
+                justify-content: center;
+                flex-basis: 60%;
+    
+                .imgContainer{
+                    flex-basis: 90%;
+                    border-bottom: dashed 3px var(--green);
+                    border-right: none;
+                    padding-bottom: 10px;
+                }
+                .presentation{
+                    flex-basis: 95%;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    @media(max-width: 620px){
+        .mainProfileCard{
+            margin: 50px;
+            flex-basis: 100%;
+            justify-content: center;
+
+            .mainProfileContent{
+                justify-content: center;
+                flex-basis: 60%;
+    
+                .imgContainer{
+                    flex-basis: 90%;
+                    border-bottom: dashed 3px var(--green);
+                    border-right: none;
+                    padding-bottom: 10px;
+                }
+                .presentation{
+                    flex-basis: 95%;
+                    margin-top: 5px;
+                }
+            }
         }
     }
 }

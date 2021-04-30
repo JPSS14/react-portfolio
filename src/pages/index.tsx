@@ -16,6 +16,10 @@ export default function Home() {
 
           <Profile/>
 
+          <div className={style.mainProjects}>
+            <h1>Projetos</h1>
+          </div>
+
         </div>
       </main>
     </>
