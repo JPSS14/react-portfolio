@@ -3,7 +3,7 @@
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: url("/code2.png") no-repeat center top fixed;
+    background: url("/code3.png") no-repeat center top fixed;
 
 
     .mainProfileCard{
@@ -108,7 +108,7 @@
 
             .mainProfileContent{
                 justify-content: center;
-                flex-basis: 60%;
+                flex-basis: 70%;
     
                 .imgContainer{
                     flex-basis: 90%;
@@ -117,7 +117,7 @@
                     padding-bottom: 10px;
                 }
                 .presentation{
-                    flex-basis: 95%;
+                    flex-basis: 100%;
                     margin-top: 5px;
                 }
             }

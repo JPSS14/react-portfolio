@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Header } from '../components/Header';
-import {Profile} from '../components/Profile';
+import { Profile } from '../components/Profile';
+import { Projects } from '../components/Projects';
 import style from '../styles/main.module.scss';
 
 export default function Home() {
@@ -14,12 +15,8 @@ export default function Home() {
       <main className={style.main}>
         <div className={style.mainContent}>
 
-          <Profile/>
-
-          <div className={style.mainProjects}>
-            <h1>Projetos</h1>
-          </div>
-
+          <Profile />
+          <Projects />
         </div>
       </main>
     </>
