@@ -39,9 +39,10 @@ export function Projects() {
                     </div>
                     <div className={style.articleContent}>
                         <p className={style.title}>Introdução</p>
-                        <p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus benefícios.</p>
-                        <p>Durante a criação da interface percebi que era possível implementar diversas funcionalidades e regras de negócio, todas a nivel de front-end.</p>
-
+                        <div className={style.text}>
+                            <p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus benefícios.</p>
+                            <p>Durante a criação da interface percebi que era possível implementar diversas funcionalidades e regras de negócio, todas a nivel de front-end.</p>
+                        </div>
                         <Link href="/react-bank">
                             <a className={style.link}>Saiba mais</a>
                         </Link>
