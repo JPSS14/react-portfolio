@@ -76,6 +76,7 @@
                     color: #fff;
                     border-bottom: solid 2px var(--green);
                     margin-bottom: 5px;
+                    padding: 5px 0;
                 }
                 p{
                     margin-left: 5px;
@@ -156,5 +157,24 @@
                 }
             }
         }
+
+        @media (max-width: 1024px){
+            .projectArticle{
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 720px){
+            .projectArticle{
+                flex-basis: 70%;
+            }
+        }
+
+        @media (max-width: 510px){
+            .projectArticle{
+                flex-basis: 90%;
+            }
+        }
     }
 }
+
