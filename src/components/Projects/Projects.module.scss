@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    padding-bottom: 20px;
 
     > header{ 
         display: flex;
@@ -34,6 +33,7 @@
         background: var(--dark-gray);
         border-top: dashed 2px var(--dark-gray);
         justify-content: space-around;
+        padding-bottom: 20px;
 
         > header{
             display: flex;

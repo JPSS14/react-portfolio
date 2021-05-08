@@ -1,0 +1,100 @@
+.mainCertificates{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    > header{ 
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding-top: 5px;
+        background: #000;
+        padding-bottom: 15px;
+
+        h1{
+            flex-basis: 100%;
+            color: var(--green);
+            text-align: center;
+            font-size: 2rem;
+        }
+        p{
+            margin-top: 5px;
+            flex-basis: 100%;
+            color: #fff;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+
+    .certificatesSection{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        background: var(--dark-gray);
+        border-top: dashed 2px var(--dark-gray);
+        justify-content: space-around;
+        padding-bottom: 20px;
+
+        > header{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            background: #000;
+            padding: 15px;
+
+            button{
+                padding: 10px;
+                font-size: 1rem;
+                background: #000;
+                border: solid 2px #fff;
+                border-radius: 20px;
+                margin: 5px 10px;
+                color: #fff;
+                cursor: pointer;
+            }      
+        }
+        .certificateArticle{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 31%;
+            margin: 13px 0;
+            background: var(--gray);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 1.18) 0px 6px 4px 0px;
+            border: solid 2px #000;
+            overflow: hidden;
+            margin: 80px 0;
+
+            .imgCertificate{
+                display: flex;
+                flex-wrap: wrap;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        @media (max-width: 1024px){
+            .certificateArticle{
+                flex-basis: 45%;
+                margin: 30px 0;
+            }
+        }
+
+        @media (max-width: 720px){
+            .certificateArticle{
+                flex-basis: 70%;
+            }
+        }
+
+        @media (max-width: 510px){
+            .certificateArticle{
+                flex-basis: 90%;
+            }
+        }
+
+    }
+}
+

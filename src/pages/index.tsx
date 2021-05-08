@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Certificates } from '../components/Certificates';
 import { Header } from '../components/Header';
 import { Profile } from '../components/Profile';
 import { Projects } from '../components/Projects';
@@ -17,6 +18,7 @@ export default function Home() {
 
           <Profile />
           <Projects />
+          <Certificates />
         </div>
       </main>
     </>
