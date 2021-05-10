@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Certificates } from '../components/Certificates';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Profile } from '../components/Profile';
 import { Projects } from '../components/Projects';
@@ -21,6 +22,7 @@ export default function Home() {
           <Certificates />
         </div>
       </main>
+      <Footer />
     </>
   )
 }
