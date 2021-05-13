@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
+    background: var(--dark-gray);
 
     > header{ 
         display: flex;
@@ -26,33 +27,52 @@
         }
     }
 
-    .certificatesSection{
+    .readMore{
+        flex-basis: 27%;
+        background: #000;
+        color: #fff;
+        margin: 20px auto;
+        font-size: 1.2em;
+        padding: 7px;
+        border-radius: 20px;
+        border: solid 3px var(--green);
+        cursor: pointer;
+
+        &:hover{
+            background: var(--green);
+        }
+    }
+
+    .certificatesMenu{
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 100%;
+        background: #000;
+        padding: 15px;
+        border-top: solid 2px var(--dark-gray);
+
+        button{
+            padding: 10px;
+            font-size: 1rem;
+            background: #000;
+            border: solid 2px #fff;
+            border-radius: 20px;
+            margin: 5px 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .certificatesSection{
+        display: flex;
+        flex-wrap: wrap-reverse;
         flex-basis: 100%;
         background: var(--dark-gray);
         border-top: dashed 2px var(--dark-gray);
         justify-content: space-around;
         padding-bottom: 20px;
+        overflow: hidden;
 
-        > header{
-            display: flex;
-            flex-wrap: wrap;
-            flex-basis: 100%;
-            background: #000;
-            padding: 15px;
-
-            button{
-                padding: 10px;
-                font-size: 1rem;
-                background: #000;
-                border: solid 2px #fff;
-                border-radius: 20px;
-                margin: 5px 10px;
-                color: #fff;
-                cursor: pointer;
-            }      
-        }
         .certificateArticle{
             display: flex;
             flex-wrap: wrap;
