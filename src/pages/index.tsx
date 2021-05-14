@@ -20,6 +20,7 @@ export default function Home() {
           <Profile />
           <Projects />
           <Certificates />
+
         </div>
       </main>
       <Footer />
