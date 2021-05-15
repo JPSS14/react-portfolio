@@ -57,9 +57,11 @@ export function Certificates() {
                     ))
                 }
             </section>
-
-            <button className={style.readMore}>Ver todos</button>
-
+            <Link href="/certificados">
+                <a>
+                    <button className={style.readMore}>Ver todos</button>
+                </a>
+            </Link>
         </div>
     );
 }

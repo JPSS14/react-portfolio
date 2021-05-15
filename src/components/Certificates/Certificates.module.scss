@@ -27,6 +27,11 @@
         }
     }
 
+    a{
+        flex-basis: 100%;
+        display: flex;
+    }
+
     .readMore{
         flex-basis: 27%;
         background: #000;

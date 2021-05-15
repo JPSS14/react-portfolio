@@ -1,0 +1,51 @@
+.mainCertificate{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background: var(--dark-gray);
+    justify-content: space-around;
+
+    > header{
+        flex-basis: 100%;
+        color: #000;
+        margin: 25px 0;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .section{
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        > header{
+            flex-basis: 100%;
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        .certificateArticle{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 31%;
+            margin: 13px 0;
+            background: var(--gray);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 1.18) 0px 6px 4px 0px;
+            border: solid 2px #000;
+            overflow: hidden;
+            margin: 80px 0;
+
+            .imgCertificate{
+                display: flex;
+                flex-wrap: wrap;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
