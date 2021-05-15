@@ -68,7 +68,15 @@
                 margin: 5px 10px;
                 color: #fff;
                 cursor: pointer;
-            }      
+
+                &:hover{
+                    border: solid 2px var(--green);
+                }
+            }
+            
+            .active{
+                border: solid 2px var(--green);
+            }
         }
         .projectArticle{
             display: flex;

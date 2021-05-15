@@ -1,9 +1,27 @@
 import style from './Projects.module.scss';
 import Link from 'next/link';
 import projects from '../../../projects.json';
+import { useEffect, useState } from 'react';
 
 export function Projects() {
-    const react = projects.filter(projects => projects.destaque === "1");
+    const [category, setCategory] = useState("destaque");
+    const [projectList, setProjectList] = useState([]);
+
+    useEffect(() => {
+        setProjectList(projects.filter(projects => projects.destaque === "1"));
+    }, []);
+
+    function projectType(type: string) {
+        if (type === "destaque") {
+            setProjectList(projects.filter(projects => projects.destaque === "1"));
+            setCategory("destaque");
+
+        } else {
+            setProjectList(projects.filter(projects => projects.categoria === type));
+            setCategory(type);
+        }
+
+    }
     return (
         <div className={style.mainProjects}>
             <header>
@@ -13,13 +31,13 @@ export function Projects() {
 
             <section className={style.projectsSection}>
                 <header>
-                    <button type="button">Construindo</button>
-                    <button type="button">Next</button>
-                    <button type="button">React</button>
-                    <button type="button">HTML + CSS + JS</button>
+                    <button type="button" className={category === "destaque" ? style.active : ''} onClick={() => projectType("destaque")}>Destaques</button>
+                    <button type="button" className={category === "next" ? style.active : ''} onClick={() => projectType("next")}>Next</button>
+                    <button type="button" className={category === "react" ? style.active : ''} onClick={() => projectType("react")}>React</button>
+                    <button type="button" className={category === "puro" ? style.active : ''} onClick={() => projectType("puro")}>HTML + CSS + JS</button>
                 </header>
 
-                {react.map((item, key) => (
+                {projectList.map((item, key) => (
                     <article className={style.projectArticle} key={key}>
                         <header>
                             <h2>{item.nome}</h2>
@@ -47,7 +65,7 @@ export function Projects() {
                     </article>
                 ))}
 
-                
+
             </section>
             <button className={style.readMore}>Ver todos</button>
         </div>
