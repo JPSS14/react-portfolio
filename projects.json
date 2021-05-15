@@ -1,0 +1,20 @@
+[
+    {
+        "id": "react-bank",
+        "categoria": "react",
+        "nome": "React Bank",
+        "status": "Construção",
+        "tipo": "Pessoal",
+        "tecnologias": [
+            {"tecnologia": "ReactJS"},
+            {"tecnologia": "NextJS"},
+            {"tecnologia": "Typescript"},
+            {"tecnologia": "JavaScript"},
+            {"tecnologia": "SASS"},
+            {"tecnologia": "HTML5"},
+            {"tecnologia": "CSS3"}
+        ],
+        "imgUrl": "/react-bank-count.png",
+        "description": "<p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus benefícios.</p> <p>Durante a criação da interface percebi que era possível implementar diversas funcionalidades e regras de negócio, todas a nivel de front-end. </p>"
+    }
+]

@@ -1,7 +1,9 @@
 import style from './Projects.module.scss';
 import Link from 'next/link';
+import projects from '../../../projects.json';
 
 export function Projects() {
+    const react = projects.filter(projects => projects.categoria === "react");
     return (
         <div className={style.mainProjects}>
             <header>
@@ -16,6 +18,34 @@ export function Projects() {
                     <button type="button">React</button>
                     <button type="button">HTML + CSS + JS</button>
                 </header>
+
+                {react.map((item, key) => (
+                    <article className={style.projectArticle} key={key}>
+                        <header>
+                            <h2>{item.nome}</h2>
+                            <p>Status: <span className={item.status === "Construção" ? style.building : ''}>{item.status}</span></p>
+                            <p>Tipo: {item.tipo}</p>
+                            <div className={style.articleTecnologies}>
+                                <ul>
+                                    {item.tecnologias.map((item, key) => (
+                                        <li key={key}>{item.tecnologia}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </header>
+                        <div className={style.articleImgContainer}>
+                            <img className={style.articleImgContainer} src={item.imgUrl} alt={item.nome} />
+                        </div>
+                        <div className={style.articleContent}>
+                            <p className={style.title}>Introdução</p>
+                            <div className={style.text} dangerouslySetInnerHTML={{ __html: item.description }}>
+                            </div>
+                            <Link href="/react-bank">
+                                <a className={style.link}>Saiba mais</a>
+                            </Link>
+                        </div>
+                    </article>
+                ))}
 
                 <article className={style.projectArticle}>
                     <header>
@@ -49,7 +79,7 @@ export function Projects() {
 
                     </div>
                 </article>
-                
+
                 <article className={style.projectArticle}>
                     <header>
                         <h2>React Bank</h2>
@@ -115,7 +145,7 @@ export function Projects() {
 
                     </div>
                 </article>
-                
+
             </section>
             <button className={style.readMore}>Ver todos</button>
         </div>

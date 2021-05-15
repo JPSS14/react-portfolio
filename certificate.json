@@ -1,0 +1,78 @@
+[
+    {
+        "id": "webdesign-em-producao",
+        "nome": "Webdesign em produção",
+        "imgUrl": "/certificado-webdesign-em-producao.png",
+        "categoria": "front-end",
+        "destaque": "1",
+        "index": "1"
+    },
+    {
+        "id": "html5-e-css3-essentials",
+        "nome": "HTML5 e CSS3 essentials",
+        "imgUrl": "/certificado-html5-e-css3-essentials-1.png",
+        "categoria": "front-end",
+        "destaque": "1",
+        "index": "1"
+    },
+
+
+    {
+        "id": "dominando-banco-de-dados-com-mysql",
+        "nome": "Dominando banco de dados com MySQL",
+        "imgUrl": "/mysql.png",
+        "categoria": "back-end",
+        "destaque": "1",
+        "index": "1"
+    },
+    {
+        "id": "modelagem-de-dados",
+        "nome": "Modelagem de dados",
+        "imgUrl": "/CertificadoFundacaoBradesco-1.png",
+        "categoria": "back-end",
+        "destaque": "0",
+        "index": "1"
+    },
+    
+
+    {
+        "id": "devtools-essentials",
+        "nome": "Devtools essentials",
+        "imgUrl": "/certificado-devtools-essentials-1.png",
+        "categoria": "outros",
+        "destaque": "0",
+        "index": "0"
+    },
+    {
+        "id": "mindset-empreendedor",
+        "nome": "Mindset empreendedor",
+        "imgUrl": "/certificado-mindset-empreendedor-1.png",
+        "categoria": "outros",
+        "destaque": "0",
+        "index": "1"
+    },
+    {
+        "id": "wordpress-essentials",
+        "nome": "Wordpress essentials",
+        "imgUrl": "/certificado-wordpress-essentials-1.png",
+        "categoria": "outros",
+        "destaque": "0",
+        "index": "1"
+    },
+    {
+        "id": "poo-java",
+        "nome": "POO Java",
+        "imgUrl": "/certificado-poo-java.png",
+        "categoria": "outros",
+        "destaque": "0",
+        "index": "1"
+    },
+    {
+        "id": "logica-de-programacao",
+        "nome": "Lógica de programação",
+        "imgUrl": "/dio.png",
+        "categoria": "outros",
+        "destaque": "0",
+        "index": "0"
+    }
+]
