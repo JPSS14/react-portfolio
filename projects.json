@@ -1,7 +1,7 @@
 [
     {
         "id": "react-bank",
-        "categoria": "react",
+        "categoria": "next",
         "nome": "React Bank",
         "status": "Construção",
         "tipo": "Pessoal",
@@ -15,6 +15,60 @@
             {"tecnologia": "CSS3"}
         ],
         "imgUrl": "/react-bank-count.png",
-        "description": "<p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus benefícios.</p> <p>Durante a criação da interface percebi que era possível implementar diversas funcionalidades e regras de negócio, todas a nivel de front-end. </p>"
+        "description": "<p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus benefícios.</p> <p>Durante a criação da interface percebi que era possível implementar diversas funcionalidades e regras de negócio, todas a nivel de front-end. </p>",
+        "destaque": "1",
+        "index": "1"
+    },
+    {
+        "id": "quiz-react",
+        "categoria": "next",
+        "nome": "Quiz React",
+        "status": "Completo",
+        "tipo": "Pessoal",
+        "tecnologias": [
+            {"tecnologia": "ReactJS"},
+            {"tecnologia": "NextJS"},
+            {"tecnologia": "Typescript"},
+            {"tecnologia": "JavaScript"},
+            {"tecnologia": "HTML5"},
+            {"tecnologia": "CSS3"}
+        ],
+        "imgUrl": "/quiz-react.png",
+        "description": "<p>O Quiz React é um sistema desenvolvido com React JS, Next JS e Typescript ele é composto por perguntas sobre os Vingadores. Onde você ganha experiência no modo jogo, e aumenta o seu nível.</p> <p>Diversos conceitos são postos em prática nesse projeto como:  rotas dinâmicas, consumo filtrado de JSON, contexts e hooks.</p>",
+        "destaque": "1",
+        "index": "1"
+    },
+    {
+        "id": "f1-react",
+        "categoria": "react",
+        "nome": "F1 React",
+        "status": "Completo",
+        "tipo": "Pessoal",
+        "tecnologias": [
+            {"tecnologia": "ReactJS"},
+            {"tecnologia": "JavaScript"},
+            {"tecnologia": "HTML5"},
+            {"tecnologia": "CSS3"}
+        ],
+        "imgUrl": "/f1-react-img1.png",
+        "description": "<p>O projeto consiste em um simulador de corrida, em que apliquei informações em uma fórmula de velocidade média, onde pretendo sempre descobrir o tempo em que um carro leva para completar a volta.</p> <p>Desta forma consigo inserir 20 carros e simular 71 voltas em Interlagos, logo após é divulgado o ranking dos pilotos.</p>",
+        "destaque": "1",
+        "index": "1"
+    },
+    {
+        "id": "buy-cars-front",
+        "categoria": "next",
+        "nome": "Buy Cars Front",
+        "status": "Completo",
+        "tipo": "Pessoal",
+        "tecnologias": [
+            {"tecnologia": "JavaScript"},
+            {"tecnologia": "HTML5"},
+            {"tecnologia": "CSS3"}
+        ],
+        "imgUrl": "/buy-cars-front1.png",
+        "description": "<p>Com base em sites de grandes montadoras de veículos, desenvolvi o Buy cars front, com o objetivo de aprender novas formas de construir um site utilizando html e css puro.</p> <p>Nele é aplicado vários conceitos de posicionamento, e estilização, por ter sido construído na mão obtive um grande aprendizado.</p>",
+        "destaque": "0",
+        "index": "1"
     }
 ]
