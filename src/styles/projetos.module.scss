@@ -1,0 +1,165 @@
+.mainProjects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background: var(--dark-gray);
+    justify-content: space-around;
+
+    > header{
+        flex-basis: 100%;
+        color: #fff;
+        margin: 25px 0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .section{
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        > header{
+            flex-basis: 100%;
+            margin: 10px 0;
+            color: #fff;
+            border-bottom: solid 2px var(--gray);
+            border-top: solid 2px var(--gray);
+            padding: 10px;
+            font-size: 1.2rem;
+            background: #000;
+            box-shadow: rgba(0, 0, 0, 1.18) 0px 6px 4px 0px;
+        }
+
+        .projectArticle{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 31%;
+            margin: 13px 0;
+            background: var(--gray);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 1.18) 0px 6px 4px 0px;
+            border: solid 2px #000;
+            overflow: hidden;
+
+            header{
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+
+                h2{
+                    flex-basis: 100%;
+                    text-align: center;
+                    background: #000;
+                    color: #fff;
+                    border-bottom: solid 2px var(--green);
+                    margin-bottom: 5px;
+                    padding: 5px 0;
+                }
+                p{
+                    margin-left: 5px;
+                    font-weight: 700;
+                    flex-basis: 100%;
+                }
+                .building{
+                    color: red;
+                }
+                .complete{
+                    color: var(--green);
+                }
+                .otmz{
+                    color: yellow;
+                }
+
+                .articleTecnologies{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-basis: 100%;
+
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-basis: 100%;
+
+                        li{
+                            flex-basis: 10%;
+                            margin: 5px 3px;
+                            border: solid 1px #000;
+                            border-radius: 5px;
+                            padding: 2px 2px;
+                        }
+                    }
+                }
+            }
+
+            .articleImgContainer{
+                flex-basis: 100%;
+
+                img{
+                    width: 100%;
+                    border-top: solid 2px #000;
+                    border-bottom: solid 2px #000;
+                }
+            }
+
+            .articleContent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .title{
+                    flex-basis: 100%;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    margin: 5px 0;
+                }
+                .text{
+                    background: #333;
+                    margin: 0px 5px;
+                    border-radius: 5px;
+
+                    p{
+                        margin: 5px 5px;
+                        color: #ddd
+                    }
+                }
+
+                .link{
+                    flex-basis: 50%;
+                    background: #000;
+                    border: solid 2px var(--green);
+                    margin: 10px 0;
+                    text-align: center;
+                    padding: 5px 0;
+                    border-radius: 20px;
+                    color: #fff;
+                    max-height: 33.23px;
+
+                    &:hover{
+                        background: var(--green);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1024px){
+            .projectArticle{
+                flex-basis: 45%;
+                margin: 30px 0;
+            }
+        }
+
+        @media (max-width: 720px){
+            .projectArticle{
+                flex-basis: 70%;
+            }
+        }
+
+        @media (max-width: 510px){
+            .projectArticle{
+                flex-basis: 90%;
+            }
+        }
+    }
+}

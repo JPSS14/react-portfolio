@@ -1,55 +1,116 @@
 import style from '../styles/main.module.scss';
-import styleCertificates from '../styles/certificados.module.scss';
-import certificates from '../../certificate.json';
+import styleProject from '../styles/projetos.module.scss';
+import projects from '../../projects.json';
+import Link from 'next/link';
 
 export default function Projetos() {
-    const front = certificates.filter(certificates => certificates.categoria === "front-end");
-    const back = certificates.filter(certificates => certificates.categoria === "back-end");
-    const outros = certificates.filter(certificates => certificates.categoria === "outros");
+    const next = projects.filter(projects => projects.categoria === "next");
+    const react = projects.filter(projects => projects.categoria === "react");
+    const outros = projects.filter(projects => projects.categoria === "puro");
     return (
         <main className={style.main}>
             <div className={style.mainContent}>
-                <section className={styleCertificates.mainCertificate}>
+                <section className={styleProject.mainProjects}>
                     <header>
                         <h1>Projetos</h1>
                     </header>
 
-                    <section className={styleCertificates.section}>
+                    <section className={styleProject.section}>
                         <header>
                             <h2>Next</h2>
                         </header>
-                        {front.map((item, key) => (
-                            <article className={styleCertificates.certificateArticle} key={key}>
-                                <div className={styleCertificates.imgCertificate}>
-                                    <img src={item.imgUrl} alt={item.nome} />
+                        {next.map((item, key) => (
+                            <article className={styleProject.projectArticle} key={key}>
+                            <header>
+                                <h2>{item.nome}</h2>
+                                <p>Status: <span className={item.status === "Construção" ? styleProject.building : item.status === "Completo" ? styleProject.complete : styleProject.otmz}>{item.status}</span></p>
+                                <p>Tipo: {item.tipo}</p>
+                                <div className={styleProject.articleTecnologies}>
+                                    <ul>
+                                        {item.tecnologias.map((item, key) => (
+                                            <li key={key}>{item.tecnologia}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            </article>
+                            </header>
+                            <div className={styleProject.articleImgContainer}>
+                                <img className={styleProject.articleImgContainer} src={item.imgUrl} alt={item.nome} />
+                            </div>
+                            <div className={styleProject.articleContent}>
+                                <p className={styleProject.title}>Introdução</p>
+                                <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
+                                </div>
+                                <Link href="/react-bank">
+                                    <a className={styleProject.link}>Saiba mais</a>
+                                </Link>
+                            </div>
+                        </article>
                         ))}
                     </section>
 
-                    <section className={styleCertificates.section}>
+                    <section className={styleProject.section}>
                         <header>
                             <h2>React</h2>
                         </header>
-                        {back.map((item, key) => (
-                            <article className={styleCertificates.certificateArticle} key={key}>
-                                <div className={styleCertificates.imgCertificate}>
-                                    <img src={item.imgUrl} alt={item.nome} />
+                        {react.map((item, key) => (
+                            <article className={styleProject.projectArticle} key={key}>
+                            <header>
+                                <h2>{item.nome}</h2>
+                                <p>Status: <span className={item.status === "Construção" ? styleProject.building : item.status === "Completo" ? styleProject.complete : styleProject.otmz}>{item.status}</span></p>
+                                <p>Tipo: {item.tipo}</p>
+                                <div className={styleProject.articleTecnologies}>
+                                    <ul>
+                                        {item.tecnologias.map((item, key) => (
+                                            <li key={key}>{item.tecnologia}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            </article>
+                            </header>
+                            <div className={styleProject.articleImgContainer}>
+                                <img className={styleProject.articleImgContainer} src={item.imgUrl} alt={item.nome} />
+                            </div>
+                            <div className={styleProject.articleContent}>
+                                <p className={styleProject.title}>Introdução</p>
+                                <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
+                                </div>
+                                <Link href="/react-bank">
+                                    <a className={styleProject.link}>Saiba mais</a>
+                                </Link>
+                            </div>
+                        </article>
                         ))}
                     </section>
 
-                    <section className={styleCertificates.section}>
+                    <section className={styleProject.section}>
                         <header>
                             <h2>Outros</h2>
                         </header>
                         {outros.map((item, key) => (
-                            <article className={styleCertificates.certificateArticle} key={key}>
-                                <div className={styleCertificates.imgCertificate}>
-                                    <img src={item.imgUrl} alt={item.nome} />
+                            <article className={styleProject.projectArticle} key={key}>
+                            <header>
+                                <h2>{item.nome}</h2>
+                                <p>Status: <span className={item.status === "Construção" ? styleProject.building : item.status === "Completo" ? styleProject.complete : styleProject.otmz}>{item.status}</span></p>
+                                <p>Tipo: {item.tipo}</p>
+                                <div className={styleProject.articleTecnologies}>
+                                    <ul>
+                                        {item.tecnologias.map((item, key) => (
+                                            <li key={key}>{item.tecnologia}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            </article>
+                            </header>
+                            <div className={styleProject.articleImgContainer}>
+                                <img className={styleProject.articleImgContainer} src={item.imgUrl} alt={item.nome} />
+                            </div>
+                            <div className={styleProject.articleContent}>
+                                <p className={styleProject.title}>Introdução</p>
+                                <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
+                                </div>
+                                <Link href="/react-bank">
+                                    <a className={styleProject.link}>Saiba mais</a>
+                                </Link>
+                            </div>
+                        </article>
                         ))}
                     </section>
 
