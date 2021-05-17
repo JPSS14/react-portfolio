@@ -67,7 +67,11 @@ export function Projects() {
 
 
             </section>
-            <button className={style.readMore}>Ver todos</button>
+            <Link href="/projetos">
+                <a className={style.readMore}>
+                    <button >Ver todos</button>
+                </a>
+            </Link>
         </div>
     );
 }

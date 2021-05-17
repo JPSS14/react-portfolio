@@ -28,18 +28,25 @@
     }
 
     .readMore{
+        display: flex;
         flex-basis: 27%;
-        background: #000;
-        color: #fff;
-        margin: 20px auto;
-        font-size: 1.2em;
-        padding: 7px;
-        border-radius: 20px;
-        border: solid 3px var(--green);
-        cursor: pointer;
+        margin: 0 auto;
+        
 
-        &:hover{
-            background: var(--green);
+        button{
+            flex-basis: 100%;
+            background: #000;
+            color: #fff;
+            margin: 20px auto;
+            font-size: 1.2em;
+            padding: 7px;
+            border-radius: 20px;
+            border: solid 3px var(--green);
+            cursor: pointer;
+
+            &:hover{
+                background: var(--green);
+            }
         }
     }
 
