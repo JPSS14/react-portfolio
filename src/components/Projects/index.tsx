@@ -58,7 +58,7 @@ export function Projects() {
                             <p className={style.title}>Introdução</p>
                             <div className={style.text} dangerouslySetInnerHTML={{ __html: item.description }}>
                             </div>
-                            <Link href="/react-bank">
+                            <Link href={`/projeto/${item.id}`}>
                                 <a className={style.link}>Saiba mais</a>
                             </Link>
                         </div>

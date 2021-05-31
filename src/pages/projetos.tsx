@@ -40,7 +40,7 @@ export default function Projetos() {
                                 <p className={styleProject.title}>Introdução</p>
                                 <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
                                 </div>
-                                <Link href="/react-bank">
+                                <Link href={`/projeto/${item.id}`}>
                                     <a className={styleProject.link}>Saiba mais</a>
                                 </Link>
                             </div>
@@ -73,7 +73,7 @@ export default function Projetos() {
                                 <p className={styleProject.title}>Introdução</p>
                                 <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
                                 </div>
-                                <Link href="/react-bank">
+                                <Link href={`/projeto/${item.id}`}>
                                     <a className={styleProject.link}>Saiba mais</a>
                                 </Link>
                             </div>
@@ -106,7 +106,7 @@ export default function Projetos() {
                                 <p className={styleProject.title}>Introdução</p>
                                 <div className={styleProject.text} dangerouslySetInnerHTML={{ __html: item.description }}>
                                 </div>
-                                <Link href="/react-bank">
+                                <Link href={`/projeto/${item.id}`}>
                                     <a className={styleProject.link}>Saiba mais</a>
                                 </Link>
                             </div>
